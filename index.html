@@ -2,64 +2,38 @@
 <html lang="de">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Campaign Planner</title>
+    <title>Kalender</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <img src="logo.png" alt="Logo vom Campaign Planner" width="200" height="200">
-    <h1>Campaign Planner</h1>
-    <h2>Funktionen</h2>
-    <ol>
-        <li>Kampagnen erstellen </li>
-        <li>Status verfolgen</li>
-        <li>Kalenderansicht</li>
-    </ol>
-    <h2>Preise</h2>
-    <table>
-        <tr>
-            <th>Paket </th>
-            <th>Preis</th>
-        </tr>
-        <tr>
-            <td>Basis</td>
-            <td> 9,99 €</td>
-        </tr>
-        <tr>
-            <td>Team</td>
-            <td> 19,99 €</td>
-        </tr>
-        <tr>
-            <td>Pro</td>
-            <td> 29,99 €</td>
-        </tr>
-    </table>
-    <form>
-        <h2>Kontaktformular</h2>
-        <p>
-            <label for="name">Dein Name:</label>
-            <input type="text" id="name" name="name">
-        </p>
-        <p>
-            <label for="email"> Deine E-Mail:</label>
-            <input type="email" id="email" name="email">
-        </p>
-        <p>
-
-            <label for="budget">Dein Budget:</label>
-            <input type="number" id="budget" name="budget">
-
-        </p>
-        <p>
-            <label for="nachricht">Deine Nachricht:</label>
-            <textarea id="nachricht" name="nachricht" rows="5" cols="40"></textarea>
-        </p>
-        <p>
-            <button type="submit">Absenden</button>
-        </p>
-
-    </form>
+    <div class="app">
+        <aside class="sidebar">
+            <h2>Meine To-dos</h2>
+            <ul>
+                <li>Beispiel-To-do 1</li>
+                <li>Beispiel-To-do 2</li>
+                <li>Beispiel-To-do 3</li>
+            </ul>
+            <button id="submit" type="submit">Neuer Termin</button>
+        </aside>
+        <main class="main">
+            <button id="prev-month">←</button>
+            <button id="next-month">→</button>
+            <h1></h1>
+            <div class="calendar-header">
+                <span>Mo</span>
+                <span>Di</span>
+                <span>Mi</span>
+                <span>Do</span>
+                <span>Fr</span>
+                <span>Sa</span>
+                <span>So</span>
+            </div>
+            <div class="calendar-grid"></div>
+        </main>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

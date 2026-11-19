@@ -1,0 +1,25 @@
+.calendar-header {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.calendar-header span {
+  text-align: center;
+  padding: 8px;
+  font-weight: bold;
+  background-color: #f3f4f6;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.day {
+    border: 1px solid #e0e0e0;
+    height: 100px;
+    padding: 8px;
+    background-color: #fdf2f8;
+}
